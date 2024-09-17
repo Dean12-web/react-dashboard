@@ -1,12 +1,13 @@
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import DashboardBox from './components/dashboard';
+import DefaultLayout from './layout/default_layout';
+
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<DashboardBox/>}/>
+        <Route path='/' element={<DefaultLayout/>}/>
       </Routes>
     </Router>
   );
